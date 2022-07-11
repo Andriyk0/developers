@@ -1,0 +1,115 @@
+@import '../../style/mixin.scss'; 
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  background-color: #67AEFC;
+
+  @include onDesctop {
+    height: 95px;
+  }
+
+  &__container {
+    max-width: 500px;
+    height: 50px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+    @include onDesctop {
+      max-width: 1920px;
+      height: 95px;
+      padding: 0px 375px;
+    }
+
+    @include onTablet {
+      max-width: 1240px;
+      padding: 0px 30px;
+    }
+  }
+
+  &__logo {
+    width: 136px;
+    height: 35px;
+
+    @include onDesctop {
+      width: 242px;
+      height: 59px;
+    }
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nav {
+  display: none;
+
+  @include onDesctop {
+    display: block;
+  }
+
+  &__list {
+    @include onDesctop {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 38px 20px;
+  }
+
+  &__link-buy {
+    display: none;
+
+    @include onDesctop {
+      display: inline;
+      padding: 10px 40px;
+      background: #75E169;
+      border-radius: 5px;
+    }
+  }
+}
+
+.menu {
+    @include onDesctop {
+        display: none;
+    }
+    display: flex;
+    cursor: pointer;
+    padding: 17px;
+    margin: -15px;
+
+    &:hover span {
+      box-shadow: 1px 1px 18px 2px #fff;
+      transition: 0.3s;
+    }
+}
+.menu > span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  margin: 2px;
+}
