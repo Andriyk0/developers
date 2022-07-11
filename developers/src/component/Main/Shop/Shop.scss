@@ -16,6 +16,7 @@
     max-width: 1920px;
     position: static;
     padding: 0 375px;
+    margin-bottom: 180px;
   }
 
   &__image-box {
@@ -183,7 +184,7 @@
     @include onTablet {
       width: 29px;
       top: 39%;
-      left: 101%;
+      left: 97%;
       z-index: 4;
     }
 
@@ -237,7 +238,7 @@
       position: absolute;
       width: 400px;
       top: 17%;
-      right: -10%;
+      right: 0;
     }
 
     @include onDesctop {

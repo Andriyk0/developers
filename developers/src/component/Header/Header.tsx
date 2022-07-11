@@ -37,7 +37,7 @@ export const Header:React.FC = () => {
           <nav className="nav__body">
             <ul className="nav__list">
               <li className="nav__item">
-                <a href="d" className="nav__link">Услуги</a>
+                <a href="#services" className="nav__link">Услуги</a>
               </li>
               <li className="nav__item">
                 <a href="d" className="nav__link">Портфолио</a>
@@ -59,7 +59,7 @@ export const Header:React.FC = () => {
     <>
     {
       menu && (
-        <NavMenu />
+        <NavMenu setMenu={setMenu}/>
       )
     }
     </>
