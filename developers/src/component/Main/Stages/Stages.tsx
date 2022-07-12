@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Stages:React.FC = () => {
   return (
-    <div className="stages">
+    <div className="stages" id="stages">
       <div className="container-fluid" >
         <div className="row">
           <p className="stages__title">Этапы разработки интернет-магазина</p>

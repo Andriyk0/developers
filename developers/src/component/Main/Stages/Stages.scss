@@ -5,11 +5,13 @@
   max-width: 500px;
   padding: 42px 24px;
   margin: auto;
+  margin-bottom: 70px;
   text-align: center;
 
   @include onTablet {
     max-width: 1024px;
     padding: 50px 0;
+    margin-bottom: 100px;
   }
 
   @include onDesctop {

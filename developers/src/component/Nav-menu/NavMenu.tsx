@@ -21,13 +21,31 @@ export const NavMenu:React.FC<Props> = ({ setMenu }) => {
                 </a>
               </li>
               <li className="nav-menu__item">
-                <a href="d" className="nav-menu__link">Портфолио</a>
+                <a 
+                  href="d" 
+                  className="nav-menu__link"
+                  onClick={() => setMenu(false)}
+                >
+                  Портфолио
+                </a>
               </li>
               <li className="nav-menu__item">
-                <a href="d" className="nav-menu__link">Этапы</a>
+                <a 
+                  href="#stages" 
+                  className="nav-menu__link"
+                  onClick={() => setMenu(false)}
+                >
+                  Этапы
+                </a>
               </li>
               <li className="nav-menu__item">
-                <a href="d" className="nav-menu__link">Дизайнеры</a>
+                <a 
+                  href="#onlineShop" 
+                  className="nav-menu__link"
+                  onClick={() => setMenu(false)}
+                >
+                  Дизайнеры
+                </a>
               </li>
             </ul>
           </nav>
