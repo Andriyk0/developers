@@ -69,7 +69,7 @@ export const Shop:React.FC = () => {
       <div className="shop__info">
         <p className="shop__title">Разработка <br /> интернет-магазина <br /> c нуля за неделю</p>
         <p className="shop__description">Дизайн интернет магазина, элементов микро UX, корзин, личного кабинета - от фирменного стиля до пользовательского интерфейса в сжатые сроки c командой Virtual Designers </p>
-        <a href="/" className="shop__button">Заказать</a>
+        <a href="#callback" className="shop__button">Заказать</a>
       </div>
     </section>
   )

@@ -49,7 +49,7 @@ export const Header:React.FC = () => {
                 <a href="#info" className="nav__link">Дизайнеры</a>
               </li>
               <li className="nav__item">
-                <a href="d" className="nav__link nav__link-buy">Заказать</a>
+                <a href="#callback" className="nav__link nav__link-buy">Заказать</a>
               </li>
             </ul>
           </nav>

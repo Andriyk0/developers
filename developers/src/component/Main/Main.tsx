@@ -1,4 +1,5 @@
 import React from 'react';
+import { Callback } from './Callback';
 import { Info } from './Info';
 import './Main.scss';
 import { OnlineShop } from './OnlineShop';
@@ -14,6 +15,7 @@ export const Main:React.FC = () => {
       <Stages />
       <OnlineShop />
       <Info />
+      <Callback />
     </>
   )
 };
