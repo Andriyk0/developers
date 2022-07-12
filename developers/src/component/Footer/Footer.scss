@@ -1,0 +1,99 @@
+@import '../../style/mixin.scss';
+
+.footer {
+  width: 100%;
+  background-color: #67AEFC;
+
+  &__container {
+    max-width: 500px;
+    text-align: center;
+    padding: 46px 46px 150px;
+    margin: auto;
+
+    @include onTablet {
+      position: relative;
+      max-width: 1920px;
+      padding: 50px 100px;
+      text-align: left;
+    }
+
+    @include onDesctop {
+      max-width: 1920px;
+      padding: 100px 375px;
+    }
+  }
+
+  &__box {
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__logo-box {
+    margin-bottom: 30px;
+  }
+
+  &__viber {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__viber-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+    @include onTablet {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__viber-img {
+    margin-right: 16px;
+  }
+
+  &__icons {
+    @include onTablet {
+      position: absolute;
+      top: 34%;
+    }
+  }
+
+  &__icons-img {
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 44px;
+    cursor: pointer;
+  }
+
+  &__email {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    cursor: pointer;
+
+    @include onTablet {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__est {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #fff;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 175%;
+    }
+  }
+}
