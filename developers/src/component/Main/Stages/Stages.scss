@@ -1,0 +1,158 @@
+@import '../../../style/mixin.scss';
+
+.stages {
+  position: relative;
+  max-width: 500px;
+  padding: 42px 24px;
+  margin: auto;
+  text-align: center;
+
+  @include onTablet {
+    max-width: 1024px;
+    padding: 50px 0;
+  }
+
+  @include onDesctop {
+    max-width: 1920px;
+    padding: 125px 375px;
+    margin-bottom: 180px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 150%;
+    text-align: center;
+    color: #111;
+
+    @include onDesctop {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 125%;
+    }
+  }
+
+  &__container {
+    padding: 27px 33px;
+    border: 2px solid #67AEFC;
+    border-radius: 15px;
+    text-align: left;
+  }
+
+  &__title2 {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+
+    @include onDesctop {
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 125%;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 175%;
+    color: #000000;
+
+    @include onDesctop {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+
+  &__image {
+    align-items: center;
+  }
+
+  &__image-centr {
+    text-align: center;
+  }
+
+  &__wave {
+    display: none;
+    position: absolute;
+    width: 190px;
+    bottom: -15%;
+    right: 5%;
+
+    @include onDesctop {
+      display: block;
+    }
+  }
+
+  &__sphere {
+    display: none;
+
+    @include onDesctop {
+      display: block;
+      position: absolute;
+      left: 10%;
+      top: 13%;
+    }
+  }
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../../../../public/image/prev.svg);
+    background-size: auto;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../../../../public/image/next.svg);
+    background-size: auto;
+}
+
+.carousel-control-next-icon {
+  display: block;
+  position: relative;
+  top: 57%;
+  left: -100%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @include onTablet {
+    top: 70%;
+  }
+  
+  &:hover {
+    background-color: #67AEFC;
+  }
+}
+
+.carousel-control-prev-icon {
+  display: block;
+  position: relative;
+  top: 57%;
+  left: 100%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @include onTablet {
+    top: 70%;
+  }
+
+  &:hover {
+    background-color: #67AEFC;
+  }
+}
+
+.col-12 {
+  @include onTablet {
+    margin: 0;
+    padding: 0;  
+  }
+}

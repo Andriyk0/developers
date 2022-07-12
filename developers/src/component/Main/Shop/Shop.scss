@@ -295,6 +295,11 @@
     padding-top: 17px;
     background: #75E169;
     border-radius: 10px;
+    border: 2px solid #75E169;
+
+    &:hover {
+      border: 2px solid #67AEFC;
+    }
 
     @include onTablet {
         width: 270px;

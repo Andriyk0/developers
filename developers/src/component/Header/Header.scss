@@ -79,7 +79,12 @@
   }
 
   &__link-buy {
-    display: none;
+    display: none; 
+    border: 2px solid #75E169;
+
+    &:hover {
+      border: 2px solid #fff;
+    }
 
     @include onDesctop {
       display: inline;
