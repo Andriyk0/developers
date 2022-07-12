@@ -1,4 +1,5 @@
 import React from 'react';
+import { Info } from './Info';
 import './Main.scss';
 import { OnlineShop } from './OnlineShop';
 import { Services } from './Services';
@@ -12,6 +13,7 @@ export const Main:React.FC = () => {
       <Services />
       <Stages />
       <OnlineShop />
+      <Info />
     </>
   )
 };

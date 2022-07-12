@@ -22,7 +22,7 @@ export const NavMenu:React.FC<Props> = ({ setMenu }) => {
               </li>
               <li className="nav-menu__item">
                 <a 
-                  href="d" 
+                  href="#onlineShop" 
                   className="nav-menu__link"
                   onClick={() => setMenu(false)}
                 >
@@ -40,7 +40,7 @@ export const NavMenu:React.FC<Props> = ({ setMenu }) => {
               </li>
               <li className="nav-menu__item">
                 <a 
-                  href="#onlineShop" 
+                  href="#info" 
                   className="nav-menu__link"
                   onClick={() => setMenu(false)}
                 >

@@ -40,13 +40,13 @@ export const Header:React.FC = () => {
                 <a href="#services" className="nav__link">Услуги</a>
               </li>
               <li className="nav__item">
-                <a href="d" className="nav__link">Портфолио</a>
+                <a href="#onlineShop" className="nav__link">Портфолио</a>
               </li>
               <li className="nav__item">
                 <a href="#stages" className="nav__link">Этапы</a>
               </li>
               <li className="nav__item">
-                <a href="#onlineShop" className="nav__link">Дизайнеры</a>
+                <a href="#info" className="nav__link">Дизайнеры</a>
               </li>
               <li className="nav__item">
                 <a href="d" className="nav__link nav__link-buy">Заказать</a>
